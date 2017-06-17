@@ -1,2 +1,12 @@
 <template name="App_home">
+    <div class="container">
+        <div>
+            <h2 id="projects" class="center-align section scrollspy">Things I have Made</h2>
+        </div>
+       {{>ui_components_projectsDisplay}}
+       
+        <div id="aboutme" class="row section scrollspy">
+            {{>ui_components_aboutMe}}
+        </div>
+    </div>
 </template>

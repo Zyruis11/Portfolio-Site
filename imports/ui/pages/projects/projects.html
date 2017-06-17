@@ -1,9 +1,2 @@
 <template name="ui_pages_projects">
-    <div class="container">
-        <div class="row">
-            {{#each project in getProjects}}
-                {{>ui_components_projectsCard cardTitle=project.name cardText=project.description cardLink=project.link cardLinkText="github"}}
-            {{/each}}
-        </div>
-    </div>
 </template>

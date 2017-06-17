@@ -3,9 +3,11 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 
 // Import needed templates
 import '../../ui/layouts/body/body.js';
+import "../../ui/layouts/adminLayout/admin.js";
 import '../../ui/pages/home/home.js';
 import '../../ui/pages/not-found/not-found.js';
 import '../../ui/pages/projects/projects.js';
+import '../../ui/pages/admin/admin.js';
 // Set up all routes in the app
 FlowRouter.route('/', {
   name: 'App.home',
@@ -14,10 +16,10 @@ FlowRouter.route('/', {
   },
 });
 
-FlowRouter.route('/projects', {
-  name:'projects',
-  action() {
-    BlazeLayout.render('App_body',{main:'ui_pages_projects'});
+FlowRouter.route('/admin',{
+  name: 'App.adminControl',
+  action(){
+    BlazeLayout.render('App_admin',{main: 'ui_pages_admin'})
   }
 });
 
