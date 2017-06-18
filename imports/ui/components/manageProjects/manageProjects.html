@@ -1,0 +1,26 @@
+<template name="ui_components_manageProjects">
+    <table class="highlight">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Link</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each project in getProjects}}
+                {{>ui_components_manageProjectsLine name=project.name description=project.description link=project.link _id=project._id}}
+            {{/each}}
+        </tbody>
+    </table>
+</template>
+
+<template name="ui_components_manageProjectsLine">
+    <tr>
+        <td>{{name}}</td>
+        <td>{{description}}</td>
+        <td>{{link}}</td>
+        <td><a id="editProject" value="{{_id}}" href="#"><i class="material-icons">mode_edit</i></a></td>
+    </tr>
+</template>

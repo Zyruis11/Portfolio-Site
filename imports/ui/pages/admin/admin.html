@@ -1,3 +1,7 @@
 <template name="ui_pages_admin">
-    <div class="container"></div>
+    <div class="container">
+        {{>ui_components_modal modalID="createProject" templateName="ui_components_forms_createProject"}}
+        <button id="createProjBtn" class="btn">Modal</button>
+        {{>ui_components_manageProjects}}
+    </div>
 </template>

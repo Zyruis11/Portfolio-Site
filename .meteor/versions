@@ -47,6 +47,7 @@ launch-screen@1.1.1
 less@2.7.9
 livedata@1.0.18
 logging@1.1.17
+markdown@1.0.12
 materialize:materialize@0.97.6
 mdg:validated-method@1.1.0
 mdg:validation-error@0.5.1
@@ -77,6 +78,7 @@ reactive-var@1.0.11
 reload@1.1.11
 retry@1.0.9
 routepolicy@1.0.12
+session@1.1.7
 shell-server@0.2.3
 spacebars@1.0.15
 spacebars-compiler@1.1.2
