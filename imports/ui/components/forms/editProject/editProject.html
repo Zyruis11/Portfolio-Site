@@ -3,27 +3,27 @@
         <form class="editProject col s12">
             <div class="row">
                 <div class="input-field col s12">
-                <input id="project_name" type="text" class="validate" required>
-                <label for="project_name">Project Name</label>
+                <input id="project_name" type="text" class="validate" value="{{projectName}}" required>
+                <label class="active" for="project_name">Project Name</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                <input id="project_url" type="text" class="validate" pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)" required>
-                <label for="project_url">Project URL</label>
+                <input id="project_url" type="text" class="validate" value="{{projectLink}}" pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)" required>
+                <label class="active" for="project_url">Project URL</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                <textarea id="project_description" type="text" class="validate materialize-textarea" required></textarea>
-                <label for="project_description">Project Description</label>
+                <textarea id="project_description" type="text" class="validate materialize-textarea" value="{{projectDesc}}" required></textarea>
+                <label class="active" for="project_description">Project Description</label>
                 </div>
             </div>
 
             <div class="modal-footer">
-                <button class="btn waves-effect waves-light" type="submit">Submit
+                <button class="btn-flat waves-effect waves-light" type="submit">Submit
                     <i class="material-icons right">send</i>
                 </button>
             </div>

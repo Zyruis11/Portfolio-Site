@@ -12,6 +12,7 @@ Template.ui_components_forms_createProject.events({
         var projLink = event.target.project_url.value; 
         var projDesc = event.target.project_description.value;
         Projects.insert({name:projName,description:projDesc,link:projLink});
-        Materialize.toast('Success', 4000)
+        Materialize.toast('Project Created', 4000);
+        $('#createProject').closeModal();
     },
 });

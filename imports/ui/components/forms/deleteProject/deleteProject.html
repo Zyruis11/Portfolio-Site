@@ -1,0 +1,19 @@
+<template name="ui_components_deleteProject">
+    <div class="row">
+        <form class="deleteProject col s12">
+            <div class="row">
+                <p>You are about to delete {{{projectName}}}? This action cannot be undone.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button id="deleteProj" class="btn-flat waves-effect waves-light right" type="submit">Delete
+                    <i class="material-icons right">delete</i>
+                </button>
+
+                <button id="cancelProj" class="btn-flat waves-effect waves-light right" type="button">Cancel
+                    <i class="material-icons right">close</i>
+                </button>
+            </div>
+        </form>
+    </div>
+</template>

@@ -1,5 +1,5 @@
 <template name="ui_components_manageProjects">
-    <table class="highlight">
+    <table class="highlight responsive-table" style=" text-overflow: ellipsis">
         <thead>
             <tr>
                 <th>Name</th>
@@ -21,6 +21,9 @@
         <td>{{name}}</td>
         <td>{{description}}</td>
         <td>{{link}}</td>
-        <td><a id="editProject" value="{{_id}}" href="#"><i class="material-icons">mode_edit</i></a></td>
+        <td>
+            <a id="editProject" value="{{_id}}" href="#"><i class="material-icons">mode_edit</i></a>
+            <a id="deleteProject" value="{{_id}}" href="#"><i class="material-icons">delete</i></a>
+        </td>
     </tr>
 </template>
