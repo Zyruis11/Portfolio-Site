@@ -1,0 +1,18 @@
+<template name="ui_components_editAboutMe">
+    <div class="row">
+    <form class="editAbout col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                <textarea id="about_text" type="text" class="validate materialize-textarea" value="{{aboutText}}" required></textarea>
+                <label class="active" for="about_text">About Me Text</label>
+            </div>
+        </div>
+
+        <div class="row right">
+            <button class="btn-flat waves-effect waves-light" type="submit">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </form>
+    </div>
+</template>

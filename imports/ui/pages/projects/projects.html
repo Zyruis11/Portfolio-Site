@@ -1,2 +1,7 @@
 <template name="ui_pages_projects">
+    <h2 class="center-align">Manage Projects</h2>
+    {{>ui_components_modal modalID="createProject" templateName="ui_components_forms_createProject"}}
+    {{>ui_components_modal modalID="editProject" templateName="ui_components_editProject"}}
+    {{>ui_components_modal modalID="deleteProject" templateName="ui_components_deleteProject"}}
+    {{>ui_components_manageProjects}}
 </template>

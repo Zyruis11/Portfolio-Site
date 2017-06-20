@@ -8,6 +8,7 @@ import '../../ui/pages/home/home.js';
 import '../../ui/pages/not-found/not-found.js';
 import '../../ui/pages/projects/projects.js';
 import '../../ui/pages/admin/admin.js';
+import "../../ui/pages/manageAbout/manageAbout.js";
 // Set up all routes in the app
 FlowRouter.route('/', {
   name: 'App.home',
@@ -20,6 +21,20 @@ FlowRouter.route('/admin',{
   name: 'App.adminControl',
   action(){
     BlazeLayout.render('App_admin',{main: 'ui_pages_admin'})
+  }
+});
+
+FlowRouter.route('/admin/projects',{
+  name: 'App.adminControl',
+  action(){
+    BlazeLayout.render('App_admin',{main: 'ui_pages_projects'})
+  }
+});
+
+FlowRouter.route('/admin/aboutme',{
+  name: 'App.adminControl',
+  action(){
+    BlazeLayout.render('App_admin',{main: 'ui_pages_manageAbout'})
   }
 });
 
