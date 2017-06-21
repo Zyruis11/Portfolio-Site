@@ -22,21 +22,3 @@ Template.App_home.helpers({
     }
 });
 
-Template.App_home.events({
-    //Expands/Collaspes all projects and changes the icon of the Fixed floating action button
-    'click #expandProjects'(event) {
-        if (!$(".collapsible-header").hasClass("active")) {
-            $(".collapsible-header").addClass("active");
-            $(".collapsible").collapsible({ accordion: false });
-            $("#expandIcon").html('<i id="expandIcon" class="material-icons left">fullscreen_exit</i>');
-        } else {
-            $("#expandIcon").html('<i id="expandIcon" class="material-icons left">fullscreen</i>');
-
-            $(".collapsible-header").removeClass(function () {
-                return "active";
-            });
-            $(".collapsible").collapsible({ accordion: true });
-            $(".collapsible").collapsible({ accordion: false });
-        }
-    }
-});

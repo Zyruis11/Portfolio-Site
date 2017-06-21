@@ -7,16 +7,20 @@
 
     <ul class="collapsible popout" data-collapsible="expandable">
         {{#each project in getProjects}}
-            {{>ui_components_projectsLine projectName=project.name projectText=project.description projectLink=project.link}}
+            {{>ui_components_projectsLine projectID=project._id projectName=project.name projectText=project.description projectLink=project.link}}
         {{/each}}
     </ul>
+
+    <div class="fixed-action-btn">
+        <a id="expandProjects" class="btn-floating btn-large waves-effect waves-light red lighten-1"><i id="expandIcon" class="material-icons left">fullscreen</i></a>
+    </div>
 </template>
 
 <template name="ui_components_projectsLine">
     <li>
-        <div class="collapsible-header waves-effect waves-teal">
+        <div id="{{projectID}}" class="collapsible-header waves-effect">
             <span class="left">{{projectName}}</span>
-            <a class="right" href="{{projectLink}}"><i class="material-icons">open_in_new</i></a>
+            <a class="right" href="{{projectLink}}"><i id="{{projectID}}iconText" class="material-icons red-text headerIcon">open_in_new</i></a>
         </div>
         <div class="collapsible-body">
             <p>{{#markdown}}{{projectText}}{{/markdown}}</p>
