@@ -3,6 +3,9 @@ This project is for a portfolio site that can be updated from an admin pannel fo
   
 The site/application is split into two different parts The admin pannel and then the main page.  
 The admin pannel allows a user to add/edit/delete parts of their portfolio without having to go through the code for the website.
+# Features  
+* Markdown support for project descriptions and about me sections  
+* Manage portfolio projects from the admin panel 
 # Packages 
 * aldeed:collection2 
 * fourseven:scss
